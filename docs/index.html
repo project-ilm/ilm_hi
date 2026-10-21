@@ -1,0 +1,107 @@
+<!doctype html><html lang="hi" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>हिन्दी · अपनी भाषा में प्रोग्रामिंग · Project ILM</title><meta name="description" content="हिन्दी: अपनी भाषा में प्रोग्रामिंग"><meta property="og:title" content="हिन्दी · अपनी भाषा में प्रोग्रामिंग · Project ILM"><meta property="og:url" content="https://project-ilm.github.io/ilm_hi/"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>:root{--ink:#1d1b2e;--mut:#5e5a73;--bg:#faf8f4;--card:#fff;--line:#e6e1d6;--brand:#2d2a6e;--acc:#d9822b;--ok:#2e7d32}
+*{box-sizing:border-box}body{margin:0;font:18px/1.75 system-ui,'Noto Sans','Noto Sans Devanagari','Noto Naskh Arabic',sans-serif;background:var(--bg);color:var(--ink)}
+.bar{background:var(--brand);color:#fff;padding:10px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.mark{width:42px;height:42px;border-radius:50%;background:var(--acc);display:grid;place-items:center;font:700 15px/1 Georgia,serif;letter-spacing:.5px;color:#fff}
+.bar b{font:700 18px Georgia,serif}.bar span{opacity:.85;font-size:14px}.bar a{color:#fff;margin-left:auto;font-size:14px}
+main{max-width:940px;margin:0 auto;padding:10px 16px 50px}.hero{padding:26px 0 10px}.hero h1{font:700 clamp(38px,8vw,64px)/1.1 Georgia,'Noto Serif',serif;margin:0}
+.hero p{font-size:21px;color:var(--mut);margin:6px 0 10px}.doi{font-size:15px}.doi a{color:var(--brand)}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:18px 0}
+h2{font:700 26px/1.3 Georgia,'Noto Serif',serif;margin:0 0 8px;color:var(--brand)}h3{margin:16px 0 6px}
+textarea{width:100%;height:150px;font:18px ui-monospace,monospace;border:1px solid #ccc;border-radius:10px;padding:8px}
+canvas{width:100%;max-width:520px;aspect-ratio:1;background:#fff;border:1px solid #ccc;border-radius:10px;display:block;margin-top:8px}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}button,select{font:inherit;padding:6px 12px;border-radius:10px;border:1px solid #c9c3b6;background:#fff;cursor:pointer}
+button.go{background:var(--ok);color:#fff;border-color:var(--ok)}pre{background:#fbfaf7;border:1px solid var(--line);border-radius:10px;padding:10px;overflow-x:auto;font-size:15px;line-height:1.55}
+.badge{font-size:13px;color:var(--ok);margin-inline-start:8px}img{max-width:100%;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.1)}
+a.cta{display:inline-block;background:var(--acc);color:#fff;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+.share{display:flex;flex-wrap:wrap;gap:8px}.share a,.share button{padding:6px 12px;border-radius:18px;border:1px solid var(--line);background:#fff;color:var(--ink);text-decoration:none;font-size:15px}
+footer{color:var(--mut);font-size:13px;margin-top:30px;line-height:1.6}table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid var(--line);padding:5px 8px;text-align:start}</style></head><body><div class="bar"><div class="mark">ILM</div><div><b>Project ILM</b><br><span>Integrative Linguistic Multiscript · Hindawi</span></div><a href="https://github.com/project-ilm">github.com/project-ilm</a></div><main><div class="hero"><h1>हिन्दी</h1><p>अपनी भाषा में प्रोग्रामिंग</p><p id="doi" class="doi"></p><div class="share" aria-label="share"><a href="https://wa.me/?text=%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%20%C2%B7%20%E0%A4%85%E0%A4%AA%E0%A4%A8%E0%A5%80%20%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%BF%E0%A4%82%E0%A4%97%20%C2%B7%20Project%20ILM%20https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F&text=%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%20%C2%B7%20%E0%A4%85%E0%A4%AA%E0%A4%A8%E0%A5%80%20%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%BF%E0%A4%82%E0%A4%97%20%C2%B7%20Project%20ILM" target="_blank" rel="noopener">Telegram</a><a href="https://twitter.com/intent/tweet?text=%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%20%C2%B7%20%E0%A4%85%E0%A4%AA%E0%A4%A8%E0%A5%80%20%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%BF%E0%A4%82%E0%A4%97%20%C2%B7%20Project%20ILM&url=https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:?subject=%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%20%C2%B7%20%E0%A4%85%E0%A4%AA%E0%A4%A8%E0%A5%80%20%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%BF%E0%A4%82%E0%A4%97%20%C2%B7%20Project%20ILM&body=https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F" target="_blank" rel="noopener">Email</a><button type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)">🔗 साझा करें</button></div></div><section><h2>शैली रोबोट</h2><p>लिखिए कि रोबोट क्या करे, या बटन दबाइए। सरल में शब्द का पहला अक्षर ही काफ़ी है।</p><div class="row"><select id="mode"><option value="simple">सरल</option><option value="logo">लोगो</option></select><label>नमूने <select id="smp"></select></label><button class="go" id="run" type="button">▶ चलाएँ</button><button id="clr" type="button">✖ साफ़ करें</button></div><div class="row"><button type="button" data-w="ऊपर">↑ ऊपर</button><button type="button" data-w="नीचे">↓ नीचे</button><button type="button" data-w="बाएँ">← बाएँ</button><button type="button" data-w="दाएँ">→ दाएँ</button></div><div class="row"><button type="button" data-l="FORWARD">FORWARD</button><button type="button" data-l="BACK">BACK</button><button type="button" data-l="LEFT">LEFT</button><button type="button" data-l="RIGHT">RIGHT</button><button type="button" data-l="REPEAT">REPEAT</button><button type="button" data-l="PENUP">PENUP</button><button type="button" data-l="PENDOWN">PENDOWN</button></div><textarea id="code" dir="ltr" spellcheck="false"></textarea><canvas id="cv" width="520" height="520"></canvas></section><section><h2>आईडीई में आपकी भाषा</h2><img src="ide.svg" alt="आईडीई में आपकी भाषा"></section><section><h2>इस भाषा की नोटबुक</h2><p>नोटबुक एक ऐसा पृष्ठ है जिसमें आप प्रोग्राम लिखते हैं और उसे एक-एक खाने में चलाते हैं। गूगल की नोटबुक सेवा कोलैब इसे आपके ब्राउज़र में, फ़ोन पर भी, बिना कुछ इंस्टॉल किए चलाती है: खोलिए, इंस्टॉलेशन पर ▶ दबाइए, फिर प्रोग्राम आज़माइए।</p><p><a class="cta" href="https://colab.research.google.com/github/hindawiai/hindawi2026.10/blob/main/notebooks/practice/hindawi_hindi.ipynb">नोटबुक खोलें</a></p></section><section><h2>हर शैली में उदाहरण</h2><h3>C<span class="badge">✓ बना और चला</span></h3><pre dir="ltr"><code>#समावेश &lt;stdio.h&gt;
+/* क्रमबद्ध सरणी में द्विआधारी खोज */
+पूर्णांक द्विआधारी_खोज(पूर्णांक मूल्यावली[], पूर्णांक गिनती, पूर्णांक कुंजी) {
+  पूर्णांक निचला = 0, ऊपरी = गिनती - 1;
+  जबतक (निचला &lt;= ऊपरी) {
+    पूर्णांक मध्य = निचला + (ऊपरी - निचला) / 2;
+    अगर (मूल्यावली[मध्य] == कुंजी) वापस मध्य;
+    अगर (मूल्यावली[मध्य] &lt; कुंजी) निचला = मध्य + 1; अन्यथा ऊपरी = मध्य - 1;
+  }
+  वापस -1;
+}
+पूर्णांक मुख्य(व्योम) {
+  पूर्णांक मूल्यावली[] = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};
+  म_लिखो(&quot;%d %d\n&quot;, द्विआधारी_खोज(मूल्यावली, 10, 23), द्विआधारी_खोज(मूल्यावली, 10, 7));
+  वापस 0;
+}
+</code></pre><h3>C++<span class="badge">✓ बना और चला</span></h3><pre dir="ltr"><code>#समावेश &lt;cstddef&gt;
+// द्विआधारी खोज वृक्ष का वर्ग, सी++ में 
+#समावेश &lt;iostream&gt;
+श्रेणी खोज_वृक्ष {
+  काष्ठा वृक्ष_गाँठ { पूर्णांक कुंजी; वृक्ष_गाँठ *बाँए = शून्य, *दाँए = शून्य; };
+  वृक्ष_गाँठ *मूल = शून्य;
+  वृक्ष_गाँठ *जोड़ो(वृक्ष_गाँठ *गाँठ, पूर्णांक कुंजी) { अगर (!गाँठ) { गाँठ = नया वृक्ष_गाँठ; गाँठ-&gt;कुंजी = कुंजी; वापस गाँठ; } अगर (कुंजी &lt; गाँठ-&gt;कुंजी) गाँठ-&gt;बाँए = जोड़ो(गाँठ-&gt;बाँए, कुंजी); अन्यथा गाँठ-&gt;दाँए = जोड़ो(गाँठ-&gt;दाँए, कुंजी); वापस गाँठ; }
+  व्योम मध्यक्रम(वृक्ष_गाँठ *गाँठ) { अगर (!गाँठ) वापस; मध्यक्रम(गाँठ-&gt;बाँए); std::अ_बाहर &lt;&lt; गाँठ-&gt;कुंजी &lt;&lt; &quot; &quot;; मध्यक्रम(गाँठ-&gt;दाँए); }
+खुला:
+  व्योम जोड़ो(पूर्णांक कुंजी) { मूल = जोड़ो(मूल, कुंजी); }
+  व्योम print() { मध्यक्रम(मूल); std::अ_बाहर &lt;&lt; std::प_पूर्ण; }
+};
+पूर्णांक मुख्य() { खोज_वृक्ष वृक्ष; पूर्णांक कुंजियाँ[] = {5, 3, 8, 1, 4}; क्रम (पूर्णांक कुंजी : कुंजियाँ) वृक्ष.जोड़ो(कुंजी); वृक्ष.print(); वापस 0; }
+</code></pre><h3>Java<span class="badge">✓ मेज़बान भाषा में उतारा गया</span></h3><pre dir="ltr"><code>// ढेर का वर्ग, जावा में 
+खुला श्रेणी ढेर {
+  निजी पूर्णांक[] वस्तुएँ = नया पूर्णांक[16];
+  निजी पूर्णांक शीर्ष = 0;
+  खुला व्योम धकेलो(पूर्णांक मूल्य) { वस्तुएँ[शीर्ष++] = मूल्य; }
+  खुला पूर्णांक निकालो() { वापस वस्तुएँ[--शीर्ष]; }
+  खुला जड़ व्योम मुख्य(माला_श्रेणी[] तर्क) {
+    ढेर वस्तुएँ = नया ढेर();
+    क्रम (पूर्णांक मूल्य = 1; मूल्य &lt;= 3; मूल्य++) वस्तुएँ.धकेलो(मूल्य * 10);
+    प्रणाली.बाहर.म_लिखो_न(वस्तुएँ.निकालो() + &quot; &quot; + वस्तुएँ.निकालो());
+  }
+}
+</code></pre><h3>BASIC<span class="badge">✓ मेज़बान भाषा में उतारा गया</span></h3><pre dir="ltr"><code>20 क्रम संख्या = 2 से 29
+30 मानो अभाज्य = 1
+40 क्रम भाजक = 2 से संख्या - 1
+50 अगर संख्या शेष भाजक = 0 हो तो मानो अभाज्य = 0
+60 क्रमांत भाजक
+70 अगर अभाज्य = 1 हो तो लिखो संख्या
+80 क्रमांत संख्या
+90 इति
+</code></pre><h3>Lex<span class="badge">✓ बना और चला</span></h3><pre dir="ltr"><code>%{
+#समावेश &lt;stdio.h&gt;
+पूर्णांक शब्दगण = 0, पंक्तियाँ = 0;
+%}
+%%
+[a-zA-Z]+   { शब्दगण++; }
+\n          { पंक्तियाँ++; }
+.           { }
+%%
+पूर्णांक yywrap(व्योम) { वापस 1; }
+पूर्णांक मुख्य(व्योम) { श_शब्द(); म_लिखो(&quot;%d words, %d lines\n&quot;, शब्दगण, पंक्तियाँ); वापस 0; }
+</code></pre><h3>Assembly<span class="badge">✓ बना और चला</span></h3><pre dir="ltr"><code>.intel_syntax noprefix
+.global _start
+.text
+_start:
+    डालो बकक्ष, 4
+    डालो बखक्ष, 1
+    भठ बगक्ष, संदेश
+    डालो बघक्ष, 28
+    विघ्न 0x80
+    डालो बकक्ष, 1
+    अथवा बखक्ष, बखक्ष
+    विघ्न 0x80
+.data
+संदेश: .ascii &quot;Hello from Hindawi assembly\n&quot;
+</code></pre></section><p><a href="standard.html">इस भाषा के लिए प्रस्तावित कीवर्ड</a></p><div class="share" aria-label="share"><a href="https://wa.me/?text=%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%20%C2%B7%20%E0%A4%85%E0%A4%AA%E0%A4%A8%E0%A5%80%20%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%BF%E0%A4%82%E0%A4%97%20%C2%B7%20Project%20ILM%20https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F&text=%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%20%C2%B7%20%E0%A4%85%E0%A4%AA%E0%A4%A8%E0%A5%80%20%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%BF%E0%A4%82%E0%A4%97%20%C2%B7%20Project%20ILM" target="_blank" rel="noopener">Telegram</a><a href="https://twitter.com/intent/tweet?text=%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%20%C2%B7%20%E0%A4%85%E0%A4%AA%E0%A4%A8%E0%A5%80%20%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%BF%E0%A4%82%E0%A4%97%20%C2%B7%20Project%20ILM&url=https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:?subject=%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%20%C2%B7%20%E0%A4%85%E0%A4%AA%E0%A4%A8%E0%A5%80%20%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%BF%E0%A4%82%E0%A4%97%20%C2%B7%20Project%20ILM&body=https%3A%2F%2Fproject-ilm.github.io%2Film_hi%2F" target="_blank" rel="noopener">Email</a><button type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)">🔗 साझा करें</button></div><footer>Project ILM · AyeAI. © 1993–2026 Abhishek Choudhary. All rights reserved. Hindawi™ is his trademark. Google Colab is a product of Google LLC; Jupyter is a trademark of LF Charities; Python is a trademark of the Python Software Foundation; Java is a trademark of Oracle; GitHub is a trademark of GitHub, Inc.; WhatsApp, Facebook and Telegram are trademarks of their owners; Zenodo is operated by CERN. Their mention implies no endorsement. Built from <a href="https://github.com/hindawiai/hindawi2026.10">hindawiai/hindawi2026.10</a>.</footer></main><script>const Z=[1632, 1776, 1984, 2406, 2534, 2662, 2790, 2918, 3046, 3174, 3302, 3430, 3558, 3664, 3792, 3872, 4160, 4240, 6112, 6160, 6470, 6608, 6784, 6800, 6992, 7088, 7232, 7248, 42528, 43216, 43264, 43472, 43504, 43600, 44016, 65296, 66720, 68912, 69734, 69872, 69942, 70096, 70384, 70736, 70864, 71248, 71360, 71472, 71904, 72016, 72784, 73040, 73120, 73552, 92768, 92864, 93008, 120782, 120792, 120802, 120812, 120822, 123200, 123632, 124144, 125264, 130032],W={},S=["ऊपर", "नीचे", "बाएँ", "दाएँ"],SH=["ऊ", "न", "ब", "द"],SP={"simple": ["ऊपर 3\nदाएँ 3\nनीचे 3\nबाएँ 3", "ऊ 2\nद 4\nन 2", "↑ 3\n→ 3\n↓ 3\n← 3"], "logo": ["REPEAT 4 [ FORWARD 100 RIGHT 90 ]", "REPEAT 36 [ FORWARD 140 RIGHT 170 ]"]};
+const c=document.getElementById('cv'),x=c.getContext('2d'),box=document.getElementById('code'),mode=document.getElementById('mode'),smp=document.getElementById('smp');
+function fill(){smp.innerHTML=SP[mode.value].map((p,i)=>'<option value="'+i+'">'+(i+1)+'</option>').join('');box.value=SP[mode.value][0];draw();}
+function draw(){const s=c.width=c.height=520;x.clearRect(0,0,s,s);let X=s/2,Y=s/2,H=-90,pen=true;x.strokeStyle='#d9822b';x.lineWidth=3;x.beginPath();x.moveTo(X,Y);
+let t=box.value.replace(/[\[\]]/g,m=>' '+m+' ').split(/\s+/).filter(Boolean),i=0;
+const num=()=>{const v=t[i++]||'1';return Number(v.replace(/\p{Nd}/gu,d=>{const cp=d.codePointAt(0);for(const z of Z)if(cp>=z&&cp<=z+9)return String(cp-z);return d;}))||1;};
+const step=(dx,dy,n)=>{for(let k=0;k<n;k++){X+=dx*20;Y+=dy*20;pen?x.lineTo(X,Y):x.moveTo(X,Y);}};
+const fwd=n=>{X+=Math.cos(H*Math.PI/180)*n;Y+=Math.sin(H*Math.PI/180)*n;pen?x.lineTo(X,Y):x.moveTo(X,Y);};
+const word=w=>{if('↑↓←→'.includes(w))return 'S'+'↑↓←→'.indexOf(w);for(let k=0;k<S.length;k++)if(S[k]===w||SH[k]===w)return 'S'+k;for(const[k,v]of Object.entries(W))if(v===w)return k;return w.toUpperCase();};
+function block(){const out=[];let dp=0;i++;while(i<t.length){if(t[i]==='[')dp++;if(t[i]===']'){if(dp===0){i++;break;}dp--;}out.push(t[i++]);}return out;}
+function run(list){const st=t,si=i;t=list;i=0;while(i<t.length)exec();t=st;i=si;}
+function exec(){const w=word(t[i++]||'');if(w[0]==='S'&&/^S\d$/.test(w)){const k=+w[1],n=num();step([0,0,-1,1][k],[-1,1,0,0][k],n);}
+else if(w==='FORWARD'||w==='FD')fwd(num());else if(w==='BACK'||w==='BK')fwd(-num());else if(w==='RIGHT'||w==='RT')H+=num();else if(w==='LEFT'||w==='LT')H-=num();
+else if(w==='PENUP'||w==='PU')pen=false;else if(w==='PENDOWN'||w==='PD')pen=true;else if(w==='REPEAT'){const n=num(),b=block();for(let r=0;r<n;r++)run(b);}}
+while(i<t.length)exec();x.stroke();x.fillStyle='#2d2a6e';x.beginPath();x.arc(X,Y,7,0,7);x.fill();}
+document.getElementById('run').onclick=draw;document.getElementById('clr').onclick=()=>{box.value='';draw();};mode.onchange=fill;smp.onchange=()=>{box.value=SP[mode.value][smp.value];draw();};
+document.querySelectorAll('[data-w],[data-l]').forEach(b=>b.onclick=()=>{box.setRangeText((box.value&&!box.value.endsWith('\n')?'\n':'')+(b.dataset.w||b.dataset.l)+' ',box.selectionStart,box.selectionEnd,'end');box.focus();});fill();</script></body></html>
